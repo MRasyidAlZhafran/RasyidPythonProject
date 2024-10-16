@@ -1,12 +1,18 @@
-r = int(input("Masukan Jari - Jari \t:"))
-t = int(input("Masukan Tingginya \t:"))
-la = int(input("Masukan Luas Alas \t:"))
-ls = int(input("Masukan Luas Selimut \t:"))
+def kerucut():
 
-phi = 22/7
+    r = int(input("Masukan Jari - Jari \t: "))
+    t = int(input("Masukan Tingginya \t: "))
+    la = int(input("Masukan Luas Alas \t: "))
+    ls = int(input("Masukan Luas Selimut \t: "))
 
-luas = la + ls
-volume = 1/3 * (phi * r * r * t)
+    phi = 22/7
 
-print(f"Luas Kerucut Adalah \t:{luas}")
-print(f"Volume Kerucut Adalah \t:{volume}")
+    luas = lambda r, t, la, ls, phi : la + ls
+    volume = lambda r, t, la, ls, phi : 1/3 * (phi * r * r * t)
+
+    print("Luas Kerucut Adalah \t:",luas(r, t, la, ls, phi))
+    print("Volume Kerucut Adalah \t:",volume(r, t, la, ls, phi))
+
+kerucut()
+kerucut()
+kerucut()

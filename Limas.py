@@ -1,9 +1,15 @@
-la = int(input("Masukan Luas Alas \t\t:"))
-ts = int(input("Masukan Tinggi Sisi \t\t:"))
-jlst = int(input("Masukan Jumlah Luas Sisi Tegak :"))
+def limas():
 
-luas = la + jlst
-volume = 1/3 * (la * ts)
+    la = int(input("Masukan Luas Alas \t\t: "))
+    ts = int(input("Masukan Tinggi Sisi \t\t: "))
+    jlst = int(input("Masukan Jumlah Luas Sisi Tegak  : "))
 
-print(f"Luas Limas Adalah \t:{luas}")
-print(f"Volume Limas Adalah \t:{volume}")
+    luas = lambda la, ts, jlst: la + jlst
+    volume = lambda la, ts, jlst: 1/3 * (la * ts)
+
+    print("Luas Limas Adalah \t\t:",luas(la, ts, jlst))
+    print("Volume Limas Adalah \t\t:",volume(la, ts, jlst))
+
+limas()
+limas()
+limas()

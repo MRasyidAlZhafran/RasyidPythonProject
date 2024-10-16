@@ -1,7 +1,13 @@
-r = int(input("Masukan Rusuknya \t:"))
+def kubus():
 
-luas = 6 * r * r
-volume = r * r * r
+    r = int(input("Masukan Rusuknya \t: "))
 
-print(f"Luas Kubus Adalah \t:{luas}")
-print(f"Volume Kubus Adalah \t:{volume}")
+    luas = lambda r : 6 * r * r
+    volume = lambda r : r * r * r
+
+    print("Luas Kubus Adalah \t:",luas(r))
+    print("Volume Kubus Adalah \t:",volume(r))
+
+kubus()
+kubus()
+kubus()

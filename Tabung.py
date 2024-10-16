@@ -1,12 +1,17 @@
-r = int(input("Masukan Jari - Jari \t:"))
-t = int(input("Masukan Tingginya \t:"))
-la = int(input("Masukan Luas Alas \t:"))
-ka = int(input("Masukan Keliling Alas \t:"))
+def tabung():
 
-phi = 22/7
+    r = int(input("Masukan Jari - Jari \t: "))
+    t = int(input("Masukan Tingginya \t: "))
+    la = int(input("Masukan Luas Alas \t: "))
+    ka = int(input("Masukan Keliling Alas \t: "))
 
-luas = (2 * la) + (ka * t)
-volume = 1/3 * (phi * r * r * t)
+    phi = 22/7
 
-print(f"Luas Kerucut Adalah \t:{luas}")
-print(f"Volume Kerucut Adalah \t:{volume}")
+    luas = lambda r, t, la, ka, phi: (2 * la) + (ka * t)
+    volume = lambda r, t, la, ka, phi: 1/3 * (phi * r * r * t)
+
+    print("Luas Kerucut Adalah \t:",luas(r, t, la, ka, phi))
+    print("Volume Kerucut Adalah \t:",volume(r, t, la, ka, phi))
+
+tabung()
+tabung()

@@ -1,7 +1,12 @@
-sisi = int(input("Masukan  nilai sisi \t: "))
+def persegi():
 
-luass = sisi * sisi
-keliling = 4 * sisi
+    sisi = int(input("Masukan  nilai sisi \t: "))
 
-print('Luas Persegi\t\t:',luass,'cm2')
-print('Keliling persegi\t:',keliling,'cm2')
+    luass = lambda sisi: sisi * sisi
+    keliling = lambda sisi: 4 * sisi
+
+    print('Luas Persegi\t\t:',luass(sisi),'cm2')
+    print('Keliling persegi\t:',keliling(sisi),'cm2')
+
+persegi()
+persegi()

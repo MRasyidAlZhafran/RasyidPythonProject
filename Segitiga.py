@@ -1,9 +1,14 @@
-alas = int(input("Masukan Alas \t\t:")) 
-tinggi = int(input("Masukan Tinggi \t\t:"))
-sisii = int(input("Masukan Sisi \t\t:"))
+def segitiga():
 
-luas_segitiga = 1/2 * alas * tinggi
-keliling_segitga = 3 * sisii
+    alas = int(input("Masukan Alas \t\t: ")) 
+    tinggi = int(input("Masukan Tinggi \t\t: "))
+    sisii = int(input("Masukan Sisi \t\t: "))
 
-print("Luas Segitiga \t\t:",luas_segitiga,"cm2")
-print("Keliling Segitiga \t:",keliling_segitga,"cm2")
+    luas_segitiga = lambda alas, tinggi, sisii: 1/2 * alas * tinggi
+    keliling_segitga = lambda alas, tinggi, sisii: 3 * sisii
+
+    print("Luas Segitiga \t\t:",luas_segitiga(alas, tinggi, sisii),"cm2")
+    print("Keliling Segitiga \t:",keliling_segitga(alas, tinggi, sisii),"cm2")
+
+segitiga()
+segitiga()

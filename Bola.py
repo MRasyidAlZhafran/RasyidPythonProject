@@ -1,9 +1,15 @@
-r = int(input("Masukan Jari Jari ="))
+def bola():
 
-phi = 22/7
+    r = int(input("Masukan Jari Jari\t: "))
 
-luas = 4/3 * (phi * r * r * r)
-volume = 4 * phi * r * r
+    phi = 22/7
 
-print("Luas Bola Adalah \t:",luas)
-print("Volume Bola Adalah \t:",volume)
+    luas = lambda r, phi: 4/3 * (phi * r * r * r)
+    volume = lambda r, phi: 4 * phi * r * r
+
+    print("Luas Bola Adalah \t:",luas(r, phi))
+    print("Volume Bola Adalah \t:",volume(r, phi))
+
+bola()
+bola()
+bola()
