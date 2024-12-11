@@ -1,6 +1,6 @@
 #Mengkonversikan Fahrenheit Ke Celcius, Reamur, Kelvin
 
-fahrenheit = int(input("Masukkan Suhu Fahrenheitnya\t\t:"))
+fahrenheit = int(input("Masukkan Suhu Fahrenheitnya\t\t: "))
 
 celcius = 5/9 * (fahrenheit - 32)
 reamur = 4/9 * (fahrenheit - 32)

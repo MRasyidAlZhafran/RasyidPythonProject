@@ -2,7 +2,7 @@ def trapesium():
     
     pssa = int(input("Masukkan Nilai Panjang Sisi Sejajar Atas \t:"))
     pssb = int(input("Masukkan Nilai Panjang Sisi Sejajar Bawah \t:"))
-    t = int(input("Masukkan Nilai Tinggi \t\t\t:"))
+    t = int(input("Masukkan Nilai Tinggi \t\t\t\t:"))
     ab = int(input("Masukkan Sisi AB \t\t\t\t:"))
     bc = int(input("Masukkan Sisi BC \t\t\t\t:"))
     cd = int(input("Masukkan Sisi CD \t\t\t\t:"))

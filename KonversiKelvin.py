@@ -1,6 +1,6 @@
 #Mengkonversikan Kelvin Ke Celcius, Fahrenheit, Reamur
 
-kelvin = int(input("Masukkan Suhu Kelvinnya: "))
+kelvin = int(input("Masukkan Suhu Kelvinnya \t\t: "))
 
 celcius = kelvin - 273
 fahrenheit = (9/5 * kelvin) - 459.67
